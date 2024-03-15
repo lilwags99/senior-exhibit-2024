@@ -25,7 +25,7 @@ i {
 
 p {
     color: #c8c8c8;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 ul {
@@ -40,7 +40,7 @@ b {
 a {
     text-decoration: none;
     color: #EC934B;
-    font-size: 18pt;
+    font-size: 14pt;
 }
 
 .underline {
@@ -348,22 +348,115 @@ footer {
     }
 
     .social-bio-heading h3 {
-        color:#c8c8c8;
+        color: #c8c8c8;
         padding: 1rem 0rem;
         width: 50vw;
     }
 
-.social-bio-body {
-    padding: 1rem 0rem 3rem 0rem;
-}
+    .social-bio-body {
+        padding: 1rem 0rem 3rem 0rem;
+    }
 
-img {
-    padding: 5rem 0rem;
-}
+    img {
+        padding: 5rem 0rem;
+    }
 
 }
 
 /******************** STUDENT PAGE MOBILE STYLES END********************/
+/******************** ABOUT PAGE MOBILE STYLES********************/
+
+.about-hero {
+    background-image: url('/img/class-photo.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 45vw;
+    margin-bottom: 3rem;
+}
+
+.class-bio {
+
+    p {
+        font-size: 14pt;
+        padding-bottom: 2rem;
+    }
+
+    .class-bio-c1 h2 {
+        font-size: 25pt;
+        width: 50vw;
+        line-height: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .class-bio-text {
+        margin-bottom: 3rem;
+    }
+
+    .class-bio-c2 h2,
+    .class-bio-c3 h2 {
+        font-size: 30pt;
+    }
+
+    .class-bio-c2 h3,
+    .class-bio-c3 h3 {
+        font-size: 13pt;
+    }
+
+}
+
+.venue {
+    padding: 2rem 0rem;
+
+    .venue-text {
+        padding-top: 3rem;
+    }
+}
+
+.h3-about {
+    padding-bottom: .5rem;
+    font-size: 20pt;
+}
+
+.date-sponsors {
+
+    p {
+        padding: .25rem 0rem;
+    }
+
+
+    .public {
+        padding: 2rem 0rem;
+    }
+    .celebration {
+        padding: 2rem 0rem;
+    }
+    .sponsors {
+        padding: 2rem 0rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************** ABOUT PAGE MOBILE STYLES END********************/
 
 /************************************** HOME DESKTOP STYLES **************************************/
 
@@ -507,7 +600,7 @@ img {
             transition: .2s all;
         }
 
-        
+
 
         .students-heading {
             display: flex;
@@ -567,80 +660,80 @@ img {
 
     /* --------- ORANGE BACKGROUND GRAPHICS -------- */
 
-.line-graphics {
-    z-index: -1;
-    padding: 0rem !important;
-}
-
-.graphic-home-1 {
-    position: absolute;
-    top: -100px;
-    left: 0px;
-    max-width: 33vw;
-
-}
-
-.graphic-home-2 {
-    position: absolute;
-    top: 300px;
-    right: -20px;
-    max-width: 40vw;
-
-}
-
-.graphic-home-3 {
-    position: absolute;
-    left: -100px;
-    top: -30px;
-    width: 50vw;
-
-}
-
-.graphic-home-4 {
-    position: absolute;
-    right: -120px;
-    top: -120px;
-    min-width: 50vw;
-
-}
-
-.graphic-home-5 {
-    position: absolute;
-    left: -100px;
-    bottom: -100px;
-
-}
-
-/* --------- ORANGE BACKGROUND GRAPHICS END -------- */
-/******************** STUDENT PAGE DESKTOP STYLES********************/
-
-.student-bio {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    padding: 10rem 0rem;
-    gap: 6rem;
-
-    .portrait {
-        margin-right: 4rem;
+    .line-graphics {
+        z-index: -1;
+        padding: 0rem !important;
     }
 
-    .student-bio-body {
-        padding-top: 3rem;
-    }
-}
+    .graphic-home-1 {
+        position: absolute;
+        top: -100px;
+        left: 0px;
+        max-width: 33vw;
 
-.social-bio {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    width: 70vw;
-    gap: 3rem;
-    padding: 2rem 0rem;
-
-    .social-bio-heading h3 {
-        width: 20vw;
     }
 
-}
+    .graphic-home-2 {
+        position: absolute;
+        top: 300px;
+        right: -20px;
+        max-width: 40vw;
+
+    }
+
+    .graphic-home-3 {
+        position: absolute;
+        left: -100px;
+        top: -30px;
+        width: 50vw;
+
+    }
+
+    .graphic-home-4 {
+        position: absolute;
+        right: -120px;
+        top: -120px;
+        min-width: 50vw;
+
+    }
+
+    .graphic-home-5 {
+        position: absolute;
+        left: -100px;
+        bottom: -100px;
+
+    }
+
+    /* --------- ORANGE BACKGROUND GRAPHICS END -------- */
+    /******************** STUDENT PAGE DESKTOP STYLES********************/
+
+    .student-bio {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10rem 0rem;
+        gap: 6rem;
+
+        .portrait {
+            margin-right: 4rem;
+        }
+
+        .student-bio-body {
+            padding-top: 3rem;
+        }
+    }
+
+    .social-bio {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 70vw;
+        gap: 3rem;
+        padding: 2rem 0rem;
+
+        .social-bio-heading h3 {
+            width: 20vw;
+        }
+
+    }
 
 
 
