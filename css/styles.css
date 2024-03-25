@@ -25,7 +25,8 @@ i {
 
 p {
     color: #c8c8c8;
-    font-size: 16pt;
+    font-size: 14pt;
+    line-height: 160%;
 }
 
 ul {
@@ -40,7 +41,7 @@ b {
 a {
     text-decoration: none;
     color: #EC934B;
-    font-size: 18pt;
+    font-size: 14pt;
 }
 
 .underline {
@@ -325,10 +326,17 @@ footer {
 
     p {
         padding: 3rem 0rem;
+        text-shadow: 2px 2px 10px #000000;
     }
 
-    img {
+    .portrait {
         box-shadow: 2px 2px 60px 4px rgba(255, 183, 0, 0.526);
+    }
+
+    .line-graphics-2 {
+        position: absolute;
+        right: 2px;
+        top: -900px;
     }
 
 }
@@ -341,22 +349,110 @@ footer {
     }
 
     .social-bio-heading h3 {
-        color:#c8c8c8;
+        color: #c8c8c8;
         padding: 1rem 0rem;
         width: 50vw;
     }
 
-.social-bio-body {
-    padding: 1rem 0rem 3rem 0rem;
-}
+    .social-bio-body {
+        padding: 1rem 0rem 3rem 0rem;
+    }
 
-img {
-    padding: 5rem 0rem;
-}
+    img {
+        padding: 5rem 0rem;
+    }
 
 }
 
 /******************** STUDENT PAGE MOBILE STYLES END********************/
+/******************** ABOUT PAGE MOBILE STYLES********************/
+
+.about-hero {
+    background-image: url('/img/class-photo.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 45vw;
+    margin-bottom: 3rem;
+}
+
+.class-bio {
+
+    p {
+        font-size: 14pt;
+        padding-bottom: 2rem;
+    }
+
+    .class-bio-c1 h2 {
+        font-size: 25pt;
+        width: 50vw;
+        line-height: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .class-bio-text {
+        margin-bottom: 3rem;
+    }
+
+    .class-bio-c2 h2,
+    .class-bio-c3 h2 {
+        font-size: 30pt;
+    }
+
+    .class-bio-c2 h3,
+    .class-bio-c3 h3 {
+        font-size: 13pt;
+    }
+
+}
+
+.venue {
+    padding: 2rem 0rem;
+    position: relative;
+
+    .venue-text {
+        padding-top: 3rem;
+    }
+}
+
+.h3-about {
+    padding-bottom: .5rem;
+    font-size: 20pt;
+}
+
+.date-sponsors {
+
+    position: relative;
+
+    p {
+        padding: .25rem 0rem;
+        text-shadow: 2px 2px 10px #000000;
+    }
+
+
+    .public {
+        padding: 2rem 0rem;
+    }
+    .celebration {
+        padding: 2rem 0rem;
+    }
+    .sponsors {
+        padding: 2rem 0rem;
+    }
+}
+
+.graphic-about-1 {
+    position: absolute;
+    right: -100px;
+    top: 70px;
+   
+}
+
+.graphic-about-2 {
+    position: absolute;
+    left: -50px;
+    top:300px;
+}
+/******************** ABOUT PAGE MOBILE STYLES END********************/
 
 /************************************** HOME DESKTOP STYLES **************************************/
 
@@ -384,7 +480,7 @@ img {
         align-items: center;
         padding: 2rem 2rem;
         background: rgb(4, 7, 7);
-        background: linear-gradient(180deg, rgba(4, 7, 7, 1) 16%, rgba(34, 11, 11, 0) 100%);
+        background: linear-gradient(180deg, rgba(4, 7, 7, 1) 20%, rgba(34, 11, 11, 0) 100%);
 
         position: fixed;
         width: 100vw;
@@ -500,7 +596,7 @@ img {
             transition: .2s all;
         }
 
-        
+
 
         .students-heading {
             display: flex;
@@ -560,50 +656,134 @@ img {
 
     /* --------- ORANGE BACKGROUND GRAPHICS -------- */
 
-.line-graphics {
-    z-index: -1;
-    padding: 0rem !important;
+    .line-graphics {
+        z-index: -1;
+        padding: 0rem !important;
+    }
+
+    .graphic-home-1 {
+        position: absolute;
+        top: -100px;
+        left: 0px;
+        max-width: 33vw;
+
+    }
+
+    .graphic-home-2 {
+        position: absolute;
+        top: 300px;
+        right: -20px;
+        max-width: 40vw;
+
+    }
+
+    .graphic-home-3 {
+        position: absolute;
+        left: -100px;
+        top: -30px;
+        width: 50vw;
+
+    }
+
+    .graphic-home-4 {
+        position: absolute;
+        right: -120px;
+        top: -120px;
+        min-width: 50vw;
+
+    }
+
+    .graphic-home-5 {
+        position: absolute;
+        left: -100px;
+        bottom: -100px;
+
+    }
+
+    /* --------- ORANGE BACKGROUND GRAPHICS END -------- */
+    /******************** STUDENT PAGE DESKTOP STYLES********************/
+
+    .student-bio {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10rem 0rem;
+        gap: 6rem;
+
+        .portrait {
+            margin-right: 4rem;
+        }
+
+        .student-bio-body {
+            padding-top: 3rem;
+        }
+    }
+
+    .social-bio {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        width: 70vw;
+        gap: 3rem;
+        padding: 2rem 0rem;
+
+        .social-bio-heading h3 {
+            width: 20vw;
+        }
+
+    }
+/******************** STUDENT PAGE DESKTOP STYLES END ********************/
+/******************** ABOUT PAGE DESKTOP STYLES********************/
+
+
+.class-bio {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem 4rem 2rem 0rem;
+
+
+    .class-bio-c1 {
+        width: 35vw;
+    }
 }
 
-.graphic-home-1 {
+.venue {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items:end;
+    padding-top: 4rem;
+    position: relative;
+
+
+    .map {
+        box-shadow: 2px 2px 30px 3px rgba(255, 183, 0, 0.382);
+    }
+
+    .venue-text {
+        padding-bottom: 2rem;
+    }
+}
+
+.date-sponsors {
+    display: grid;
+    grid-template-columns: .75fr 1fr;
+    padding: 4vw 0vw 8vw 12vw;
+    position: relative;
+}
+
+.graphic-about-1 {
     position: absolute;
+    right: -100px;
     top: -100px;
-    left: 0px;
-    max-width: 33vw;
-
+    width: 32%;
 }
 
-.graphic-home-2 {
-    position: absolute;
-    top: 300px;
-    right: -20px;
-    max-width: 40vw;
-
-}
-
-.graphic-home-3 {
+.graphic-about-2 {
     position: absolute;
     left: -100px;
-    top: -30px;
-    width: 50vw;
-
+    top:100px;
+    width: 32%;
 }
-
-.graphic-home-4 {
-    position: absolute;
-    right: -120px;
-    top: -120px;
-    min-width: 50vw;
-
-}
-
-.graphic-home-5 {
-    position: absolute;
-    left: -100px;
-    bottom: -100px;
-
-}
-
-/* --------- ORANGE BACKGROUND GRAPHICS END -------- */
+/******************** ABOUT PAGE DESKTOP END ********************/
 
 }
