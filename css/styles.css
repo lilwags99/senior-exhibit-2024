@@ -340,55 +340,53 @@ footer {
     display: flex;
     gap: 4rem;
     flex-direction: column-reverse;
-
-
-    h2 {
-        font-size: 32pt;
-        line-height: 3.5rem;
-    }
-
-    h3 a {
-        font-size: 14pt;
-    }
-
-    p {
-        padding: 3rem 0rem;
-        text-shadow: 2px 2px 10px #000000;
-    }
-
-    .portrait {
-        box-shadow: 2px 2px 60px 4px rgba(255, 183, 0, 0.526);
-    }
-
-    .line-graphics-2 {
-        position: absolute;
-        right: 2px;
-        top: -900px;
-    }
-
 }
 
-.social-bio {
+.student-bio h2 {
+    font-size: 32pt;
+    line-height: 3.5rem;
+}
 
-    h2 {
-        font-size: 25pt;
-        line-height: 3.5rem;
-    }
+.student-bio h3 a {
+    font-size: 14pt;
+}
 
-    .social-bio-heading h3 {
-        color: #c8c8c8;
-        padding: 1rem 0rem;
-        width: 50vw;
-    }
+.student-bio p {
+    padding: 3rem 0rem;
+    text-shadow: 2px 2px 10px #000000;
+}
 
-    .social-bio-body {
-        padding: 1rem 0rem 3rem 0rem;
-    }
+.portrait {
+    box-shadow: 2px 2px 60px 4px rgba(255, 183, 0, 0.526);
+}
 
-    img {
-        padding: 5rem 0rem;
-    }
+.line-graphics-2 {
+    position: absolute;
+    right: 2px;
+    top: -900px;
+}
 
+.social-bio h2 {
+    font-size: 25pt;
+    line-height: 3.5rem;
+}
+
+.social-bio-heading h3 {
+    color: #c8c8c8;
+    padding: 1rem 0rem;
+    width: 50vw;
+}
+
+.social-bio-body {
+    padding: 1rem 0rem 3rem 0rem;
+}
+
+.social-bio img {
+    padding: 5rem 0 2rem 0;
+}
+
+.all-students-wrapper h3 {
+    padding: 0 0 4rem 0;
 }
 
 /******************** STUDENT PAGE MOBILE STYLES END********************/
@@ -741,18 +739,19 @@ footer {
     /******************** STUDENT PAGE DESKTOP STYLES********************/
 
     .student-bio {
+        width: 100%;
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         padding: 10rem 0rem;
         gap: 6rem;
+    }
 
-        .portrait {
-            margin-right: 4rem;
-        }
+    .portrait {
+        margin-right: 4rem;
+    }
 
-        .student-bio-body {
-            padding-top: 3rem;
-        }
+    .student-bio-body {
+        padding-top: 3rem;
     }
 
     .social-bio {
@@ -761,12 +760,12 @@ footer {
         width: 70vw;
         gap: 3rem;
         padding: 2rem 0rem;
-
-        .social-bio-heading h3 {
-            width: 20vw;
-        }
-
     }
+
+    .social-bio-heading h3 {
+        width: 20vw;
+    }
+
 
     /******************** STUDENT PAGE DESKTOP STYLES END ********************/
     /******************** ABOUT PAGE DESKTOP STYLES********************/
