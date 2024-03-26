@@ -216,19 +216,16 @@ main {
     position: relative;
 }
 
-.students-heading {
-    h2 {
-        font-size: 40pt;
-        text-shadow: 2px 2px 10px #000000;
-    }
+.students-heading h2 {
+    font-size: 40pt;
+    text-shadow: 2px 2px 10px #000000;
+}
 
-    .students p,
-    b {
-        font-size: 16px;
-        text-transform: uppercase;
-        color: #EC934B !important;
-        padding: 1rem 0rem 4rem 0rem;
-    }
+.students-heading p {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #EC934B !important;
+    padding: 1rem 0rem 4rem 0rem;
 }
 
 .sudents h3 {
@@ -254,20 +251,34 @@ footer {
     background: rgb(34, 11, 11);
     background: linear-gradient(180deg, rgba(34, 11, 11, 1) 31%, rgba(4, 7, 7, 1) 88%);
     padding: 3rem 10vw 4rem 10vw;
-
-    p {
-        font-size: 12pt;
-        color: #EC934B !important;
-    }
-
-    img {
-        padding: 2rem 0rem;
-    }
-
-    i {
-        padding-right: 1rem;
-    }
 }
+
+.footer-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer p {
+    font-size: 12pt;
+    color: #EC934B !important;
+}
+
+.footer img {
+    padding: 2rem 0rem;
+}
+
+.footer-body-icons i {
+    font-size: 20pt !important;
+}
+
+.footer-body-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
 
 /* --------- FOOTER END -------- */
 /* --------- ORANGE BACKGROUND GRAPHICS -------- */
@@ -654,29 +665,29 @@ footer {
     /* --------- FOOTER -------- */
 
     footer {
-
         padding: 2.5rem 5vw 2.5rem 5vw;
+    }
 
-        .footer-body {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+    .footer-body {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-        p {
-            font-size: 12pt;
-            color: #EC934B;
-        }
+    .footer p {
+        font-size: 12pt;
+        color: #EC934B;
+    }
 
-        .logo {
-            max-width: 15vw;
-            margin-right: 4rem;
-        }
+    .logo {
+        max-width: 15vw;
+        margin-right: 4rem;
+    }
 
-        i {
-            padding-right: 1rem;
-            transform: scale(60%);
-        }
+    .footer .fa-brands {
+        height: 32px;
+        width: 32px;
     }
 
     /* --------- FOOTER END -------- */
