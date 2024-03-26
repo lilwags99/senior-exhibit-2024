@@ -186,12 +186,24 @@ main {
         padding-bottom: 1rem;
     }
 
-    .location-body-date-2,
+    .download-map-wrapper {
+        display: inline-block;
+    }
+
+    .location-body-date {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
     .location-body-date-1 {
-        padding: 1rem 0rem;
+        padding-bottom: 16px;
     }
 
     .location-body-address {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
         padding: 3rem 0rem 2rem 0rem;
     }
 }
@@ -202,39 +214,37 @@ main {
 .students {
     padding: 3rem 0rem;
     position: relative;
+}
 
-    .students-heading {
-        h2 {
-            font-size: 40pt;
-            text-shadow: 2px 2px 10px #000000;
-        }
-
-        p,
-        b {
-            font-size: 16px;
-            text-transform: uppercase;
-            color: #EC934B !important;
-            padding: 1rem 0rem 4rem 0rem;
-        }
-    }
-
-    h3 {
-        font-size: 18pt;
-    }
-
-
-    li a {
-        font-size: 13pt;
-        font-weight: 600;
+.students-heading {
+    h2 {
+        font-size: 40pt;
         text-shadow: 2px 2px 10px #000000;
-        line-height: 6rem;
     }
 
-    .students-o {
-        padding: 4rem 0rem 10rem 0rem;
+    .students p,
+    b {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #EC934B !important;
+        padding: 1rem 0rem 4rem 0rem;
     }
+}
+
+.sudents h3 {
+    font-size: 18pt;
+}
 
 
+.students li a {
+    font-size: 13pt;
+    font-weight: 600;
+    text-shadow: 2px 2px 10px #000000;
+    line-height: 6rem;
+}
+
+.students-o {
+    padding: 4rem 0rem 10rem 0rem;
 }
 
 /* --------- STUDENTS END -------- */
@@ -432,9 +442,11 @@ footer {
     .public {
         padding: 2rem 0rem;
     }
+
     .celebration {
         padding: 2rem 0rem;
     }
+
     .sponsors {
         padding: 2rem 0rem;
     }
@@ -444,14 +456,15 @@ footer {
     position: absolute;
     right: -100px;
     top: 70px;
-   
+
 }
 
 .graphic-about-2 {
     position: absolute;
     left: -50px;
-    top:300px;
+    top: 300px;
 }
+
 /******************** ABOUT PAGE MOBILE STYLES END********************/
 
 /************************************** HOME DESKTOP STYLES **************************************/
@@ -491,8 +504,9 @@ footer {
             padding-left: 2.5rem;
         }
 
-        ul {
+        .links {
             display: flex;
+            flex-direction: row;
             gap: 6rem;
             padding-right: 4rem;
             align-items: center;
@@ -518,32 +532,35 @@ footer {
     /* --------- HERO AREA -------- */
 
     .hero {
+        height: 900px;
+        width: 100%
+    }
 
-        h1 {
-            font-size: 50pt;
-            padding: 40vh 4rem 25vh 4rem;
-        }
+    .hero h1 {
+        font-size: 50pt;
+        padding: 40vh 4rem 25vh 4rem;
+    }
 
-        i {
-            transform: scale(65%);
-        }
-
+    .hero i {
+        transform: scale(65%);
     }
 
     /* --------- HERO AREA END -------- */
     /* --------- INTRO -------- */
 
     .intro {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
 
-        h2 {
-            width: 50vw;
-            font-size: 40pt;
-        }
+    .intro h2 {
+        width: 50vw;
+        font-size: 40pt;
+    }
 
-        p {
-            width: 50vw;
-        }
-
+    .intro p {
+        width: 50vw;
     }
 
     /* --------- INTRO END -------- */
@@ -561,10 +578,14 @@ footer {
 
         }
 
+        .location-body-heading h2 {
+            font-size: 40pt;
+            padding-bottom: 16px;
+        }
+
         .location-body-address {
             padding: 0rem;
         }
-
 
         .location-body {
             display: flex;
@@ -580,47 +601,53 @@ footer {
     /* --------- STUDENTS -------- */
 
     .students {
-
         padding: 3rem 0rem 3rem 0rem;
+    }
 
-        h3,
-        p,
-        li a,
-        .longname {
-            font-size: 14pt;
-            transition: .3s all;
-        }
+    .students h3,
+    p,
+    li a,
+    .longname {
+        font-size: 14pt;
+        transition: .3s all;
+    }
 
-        li a:hover {
-            color: #830a15;
-            transition: .2s all;
-        }
+    li a:hover {
+        color: #830a15;
+        transition: .2s all;
+    }
 
+    .students-heading {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
 
+    .students-heading h2 {
+        font-size: 40pt;
+    }
 
-        .students-heading {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 3rem;
+    .students-heading p {
+        color: #EC934B;
+        font-size: 14pt;
+        padding: 1.5rem 0rem 4rem 0rem;
+        text-transform: uppercase;
+    }
 
-            p,
-            b {
-                font-size: 14pt;
-                padding: 1.5rem 0rem 4rem 0rem;
-            }
+    .students-o {
+        padding: 3rem 0rem;
+    }
 
-        }
+    .students-ip-roster ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 6rem;
+    }
 
-        .students-o {
-            padding: 3rem 0rem;
-        }
-
-        ul {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            column-gap: 6rem;
-        }
-
+    .students-o-roster ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 6rem;
     }
 
     /* --------- STUDENTS END -------- */
@@ -730,60 +757,62 @@ footer {
         }
 
     }
-/******************** STUDENT PAGE DESKTOP STYLES END ********************/
-/******************** ABOUT PAGE DESKTOP STYLES********************/
+
+    /******************** STUDENT PAGE DESKTOP STYLES END ********************/
+    /******************** ABOUT PAGE DESKTOP STYLES********************/
 
 
-.class-bio {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem 4rem 2rem 0rem;
+    .class-bio {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 2rem;
+        padding: 2rem 4rem 2rem 0rem;
 
 
-    .class-bio-c1 {
-        width: 35vw;
-    }
-}
-
-.venue {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-    align-items:end;
-    padding-top: 4rem;
-    position: relative;
-
-
-    .map {
-        box-shadow: 2px 2px 30px 3px rgba(255, 183, 0, 0.382);
+        .class-bio-c1 {
+            width: 35vw;
+        }
     }
 
-    .venue-text {
-        padding-bottom: 2rem;
+    .venue {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: end;
+        padding-top: 4rem;
+        position: relative;
+
+
+        .map {
+            box-shadow: 2px 2px 30px 3px rgba(255, 183, 0, 0.382);
+        }
+
+        .venue-text {
+            padding-bottom: 2rem;
+        }
     }
-}
 
-.date-sponsors {
-    display: grid;
-    grid-template-columns: .75fr 1fr;
-    padding: 4vw 0vw 8vw 12vw;
-    position: relative;
-}
+    .date-sponsors {
+        display: grid;
+        grid-template-columns: .75fr 1fr;
+        padding: 4vw 0vw 8vw 12vw;
+        position: relative;
+    }
 
-.graphic-about-1 {
-    position: absolute;
-    right: -100px;
-    top: -100px;
-    width: 32%;
-}
+    .graphic-about-1 {
+        position: absolute;
+        right: -100px;
+        top: -100px;
+        width: 32%;
+    }
 
-.graphic-about-2 {
-    position: absolute;
-    left: -100px;
-    top:100px;
-    width: 32%;
-}
-/******************** ABOUT PAGE DESKTOP END ********************/
+    .graphic-about-2 {
+        position: absolute;
+        left: -100px;
+        top: 100px;
+        width: 32%;
+    }
+
+    /******************** ABOUT PAGE DESKTOP END ********************/
 
 }
