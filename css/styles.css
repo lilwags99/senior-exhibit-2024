@@ -93,18 +93,16 @@ nav {
     z-index: 1;
     transition: .3s all;
     font-size: 15pt;
-
-    li {
-        margin: 6rem 0rem;
-    }
-
-    a {
-        font-size: 35pt;
-        color: #EC934B;
-
-    }
 }
 
+.nav li {
+    margin: 6rem 0rem;
+}
+
+.nav a {
+    font-size: 35pt;
+    color: #EC934B;
+}
 
 .menu-button {
     background-color: rgba(243, 232, 226, 0);
@@ -117,9 +115,13 @@ nav {
 
 ul .menu-button {
     position: absolute;
-    right: 50px;
-    top: 50px;
+    right: 42px;
+    top: 48px;
     color: #EC934B;
+}
+
+.menu-button i {
+    font-size: 24pt !important;
 }
 
 /* --------- HAMBURGER END -------- */
@@ -133,35 +135,31 @@ main {
 .hero {
     text-align: center;
     padding-bottom: 9rem;
+}
 
-
-    h1 {
-        font-weight: 700;
-        font-size: 100pt;
-        padding: 30vh 10vw;
-        text-shadow: 2px 2px 10px #000000;
-        line-height: 3.5rem;
-    }
-
+.hero h1 {
+    font-weight: 700;
+    font-size: 54pt;
+    padding: 12vh 10vw;
+    text-shadow: 2px 2px 10px #000000;
+    line-height: 5rem;
 }
 
 /* --------- HERO AREA END -------- */
 /* --------- INTRO -------- */
 
 .intro {
-
     padding: 6rem 0rem;
+}
 
-    h2 {
-        font-size: 32pt;
-        line-height: 3.5rem;
-        margin-bottom: 2%;
-    }
+.intro h2 {
+    font-size: 32pt;
+    line-height: 3.5rem;
+    margin-bottom: 2%;
+}
 
-    p {
-        padding: 1rem 0rem;
-    }
-
+.intro p {
+    padding: 1rem 0rem;
 }
 
 /* --------- INTRO END -------- */
@@ -173,39 +171,46 @@ main {
 }
 
 .location {
-
     padding: 5rem 0rem;
     position: relative;
+}
 
-    i {
-        padding: 1rem 0rem;
-    }
+.location i {
+    padding: 1rem 0rem;
+}
 
-    h2 {
-        font-size: 24pt;
-        padding-bottom: 1rem;
-    }
+.location h2 {
+    font-size: 24pt;
+    padding-bottom: 1rem;
+}
 
-    .download-map-wrapper {
-        display: inline-block;
-    }
+.download-map-wrapper {
+    display: inline-block;
+}
 
-    .location-body-date {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }
+.location-body-date {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
-    .location-body-date-1 {
-        padding-bottom: 16px;
-    }
+.location-body-date-1 {
+    padding-bottom: 16px;
+}
 
-    .location-body-address {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        padding: 3rem 0rem 2rem 0rem;
-    }
+.location-body-address {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 3rem 0rem 2rem 0rem;
+}
+
+.location-body-date i {
+    font-size: 36pt !important;
+}
+
+.location-body-address i {
+    font-size: 36pt !important;
 }
 
 /* --------- LOCATION END -------- */
@@ -241,7 +246,7 @@ main {
 }
 
 .students-o {
-    padding: 4rem 0rem 10rem 0rem;
+    padding: 4rem 0rem 4rem 0rem;
 }
 
 /* --------- STUDENTS END -------- */
@@ -257,6 +262,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    align-items: center;
 }
 
 .footer p {
@@ -582,30 +588,27 @@ footer {
         display: none;
     }
 
-    .location {
+    .desktop-map {
+        display: block;
 
-        .desktop-map {
-            display: block;
+    }
 
-        }
+    .location-body-heading h2 {
+        font-size: 40pt;
+        padding-bottom: 16px;
+    }
 
-        .location-body-heading h2 {
-            font-size: 40pt;
-            padding-bottom: 16px;
-        }
+    .location-body-address {
+        padding: 0rem;
+    }
 
-        .location-body-address {
-            padding: 0rem;
-        }
+    .location-body {
+        display: flex;
+        gap: 12rem;
+    }
 
-        .location-body {
-            display: flex;
-            gap: 12rem;
-        }
-
-        p {
-            line-height: 35px;
-        }
+    .location p {
+        line-height: 35px;
     }
 
     /* --------- LOCATION END -------- */
