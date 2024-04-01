@@ -450,7 +450,6 @@ footer {
     text-shadow: 2px 2px 10px #000000;
 }
 
-
 .public {
     padding: 2rem 0rem;
 }
@@ -620,6 +619,10 @@ footer {
         transition: .3s all;
     }
 
+    .students a {
+        line-height: 100%;
+    }
+
     li a:hover {
         color: #830a15;
         transition: .2s all;
@@ -649,13 +652,17 @@ footer {
     .students-ip-roster ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 6rem;
+        column-gap: 3rem;
     }
 
     .students-o-roster ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        column-gap: 6rem;
+        column-gap: 3rem;
+    }
+
+    .studnets a {
+        line-height: 100%;
     }
 
     /* --------- STUDENTS END -------- */

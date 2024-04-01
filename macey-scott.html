@@ -35,10 +35,10 @@
     <nav>
       <ul>
         <button class="menu-button">
-          <i class="fa-solid fa-xmark fa-3x"></i>
+          <p><i class="fa-solid fa-xmark fa-3x"></i></p>
         </button>
-        <li><a href="index.html" title="Home">Home</a></li>
-        <li><a href="#students" title="Students">Students</a></li>
+        <li><a href="index.html" title="Home"><b>Home</b></a></li>
+        <li><a href="index.html#students" title="Students">Students</a></li>
         <li><a href="about.html" title="About">About</a></li>
       </ul>
     </nav>
@@ -47,12 +47,10 @@
     <div class="desktop-nav">
       <a href="index.html" title="Home"><img class="logo" src="./img/cd-logo.png" alt="Change Directions" /></a>
       <div class="top-links">
-        <div class="links">
-          <ul>
-            <li><a href="index.html#students" class="underline">Students</a></li>
-            <li><a href="about.html">About</a></li>
-          </ul>
-        </div>
+        <ul class="links">
+          <li><a href="#students">Students</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
       </div>
     </div>
   </header>
@@ -62,7 +60,7 @@
 
     <section class="student-bio">
       <div class="student-bio-body">
-        <h2>Macey Scott</h2>
+        <h2>Lorem Ipsum</h2>
         <h3><a href=https://google.com class="underline">loremipsum.co <i
               class="fa-solid fa-chevron-right fa-xs"></i></a></h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
@@ -96,15 +94,15 @@
           accessibility, we can break the cycle of exclusion, fostering a sense of community and connection for
           everyone. This effort not only would improve individual well-being, but contribute to building a more
           equitable society.</p>
-          <img class="exhibit-mockup" src="./img/544x643-Transparent.png">
+        <img class="exhibit-mockup" src="./img/544x643-Transparent.png">
       </div>
     </section>
 
-      
 
-      <h3><a href=https://google.com class="underline see-students">See All Students <i
+    <div class="all-students-wrapper">
+      <h3><a href=index.html#students class="underline see-students">See All Students <i
             class="fa-solid fa-chevron-right fa-xs"></i></a></h3>
-    
+    </div>
 
 
   </main>
@@ -112,10 +110,12 @@
   <footer>
     <div class="footer-body">
       <p>ASU Visual Communication Design</p>
-      <img class="logo" src="./img/cd-logo.png" alt="Change Directions" />
+      <div class="footer-logo">
+        <img class="logo" src="./img/cd-logo.png" alt="Change Directions" />
+      </div>
       <div class="footer-body-icons">
-        <i class="fa-brands fa-instagram fa-3x"></i>
-        <i class="fa-brands fa-tiktok fa-3x"></i>
+        <p><i class="fa-brands fa-instagram fa-3x"></i></p>
+        <p><i class="fa-brands fa-tiktok fa-3x"></i></p>
       </div>
     </div>
   </footer>
